@@ -1,43 +1,51 @@
-# Astro Starter Kit: Minimal
+# Easy FreeDge
+
+Easy FreeDge is a mobile-first smart shopping and household inventory assistant. It helps households keep track of what they have, what is running low, and what they may need to buy next.
+
+The product is designed to reduce household busywork through lightweight inventory tracking, shared shopping lists, purchase-history insights, and fast product capture. Planned input methods include manual entry, barcode scanning, product and receipt photography, and AI-assisted recognition.
+
+> Spend less time managing the application than the application saves you managing your household.
+
+## This repository
+
+This repository contains the public-facing marketing website, not the mobile application or backend. It is intentionally small while the product is being developed.
+
+The website currently presents the product idea, its main benefits, and progress notes. Future additions may include a beta waitlist, product previews, FAQ, privacy information, and app-store links.
+
+## Tech stack
+
+- [Astro](https://astro.build/) for a lightweight static site
+- TypeScript configuration supplied by Astro
+- Responsive CSS with minimal client-side JavaScript
+
+## Local development
+
+Requires Node.js 22.12 or newer.
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The development site is available at `http://localhost:4321`.
 
-## 🚀 Project Structure
+## Commands
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Build the production site into `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run astro -- --help` | Show Astro CLI help |
+
+## Project structure
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+public/                Static assets
+src/pages/index.astro  Landing page
+astro.config.mjs       Astro configuration
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Status
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Under active development. No public release date is currently committed.
